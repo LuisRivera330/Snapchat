@@ -18,7 +18,6 @@ class iniciarSesionViewController: UIViewController{
     @IBOutlet weak var passwordTextField: UITextField!
     
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -27,7 +26,6 @@ class iniciarSesionViewController: UIViewController{
     }
     
 
-    
     
     @IBAction func iniciarSessionTapped(_ sender: Any) {
         Auth.auth().signIn(withEmail: emailTextField.text!, password:passwordTextField.text!){(user,error) in
